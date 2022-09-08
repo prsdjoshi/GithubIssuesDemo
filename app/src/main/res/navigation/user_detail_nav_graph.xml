@@ -7,20 +7,20 @@
 
     <fragment
         android:id="@+id/followerListFragment"
-        android:name="com.sample.githubconnect.view.fragments.FollowerListFragment"
+        android:name="com.sample.githubissuesdemo.view.fragments.FollowerListFragment"
         android:label="FollowerListFragment"
-        tools:layout="@layout/fragment_following_list">
+        tools:layout="@layout/fragment_follower_list">
         <action
-            android:id="@+id/action_followerListFragment_to_followingListFragment"
-            app:destination="@id/followingListFragment" />
+            android:id="@+id/action_followerListFragment_to_commentsListFragment"
+            app:destination="@id/commentsListFragment" />
     </fragment>
     <fragment
-        android:id="@+id/followingListFragment"
-        android:name="com.sample.githubconnect.view.fragments.FollowingListFragment"
-        android:label="FollowingListFragment"
-        tools:layout="@layout/fragment_following_list">
+        android:id="@+id/commentsListFragment"
+        android:name="com.sample.githubissuesdemo.view.fragments.CommentsListFragment"
+        android:label="CommentsListFragment"
+        tools:layout="@layout/fragment_comments_list">
         <action
-            android:id="@+id/action_followingListFragment_to_followerListFragment"
+            android:id="@+id/action_commentsListFragment_to_followerListFragment"
             app:destination="@id/followerListFragment" />
     </fragment>
 </navigation>

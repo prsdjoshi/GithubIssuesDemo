@@ -1,18 +1,22 @@
-# GithubConnect
-An Android app demo that uses github API to search and fetch user details by user name. It also displays user details(i.e. image, name, bio), user's followers and following List.
+# Github issues Demo
+This App displays GitHub issues of okhttp (https://github.com/square/okhttp/issues) repository from square.
+     Features:
+      1. Show the issues provided by API in a List.
+      - Show complete title.
+      - Show first 200 Characters of the issue description.
+      - Show user info. (userName and avatar)
+      - updated_at date in mm-dd-yyyy format.
+      2. App should show all the comments and issue info when the user clicks on the issue from the issue list.
+         App will work in offline mode also.
 
-Project is completely written in kotlin.
+        APIs info.     https://api.github.com/repos/square/okhttp/issues
 
-Features & API used in project : 
-- Project is developed using MVVM architecture.
-- android paging dependancy is used to load items in recycler view
-- Dependency injection using Koin
-- android navigation librabry is used for fragment navigation and inflating child fragments
-- Android Data Binding
-- Unit test for view model which contains LiveData & PagingData
+     This will include list of all issues.
+     In response to the above URL. Each json object’s comments_url will include a list of comments.
 
-- User List
-<img src="https://github.com/chetan-AD/GithubConnect/blob/master/home.png?raw=true" width=50% height=50%>
+     3. Retrofit for API and Glide for Image loading.
+     4. Language Used: Kotlin .
+     5. Used MVVM Architecture
 
-- User Details
-<img src="https://github.com/chetan-AD/GithubConnect/blob/master/user_details.png?raw=true" width=50% height=50%>
+
+

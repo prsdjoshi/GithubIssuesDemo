@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/userListFragment"
-        android:name="com.sample.githubconnect.view.fragments.UserListFragment"
+        android:name="com.sample.githubissuesdemo.view.fragments.UserListFragment"
         android:label="fragment_user_list"
-        tools:layout="@layout/fragment_user_list" >
+        tools:layout="@layout/fragment_github_issue_list" >
         <action
             android:id="@+id/action_userListFragment_to_userDetailsFragment"
             app:destination="@id/userDetailsFragment"
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/userDetailsFragment"
-        android:name="com.sample.githubconnect.view.fragments.UserDetailsFragment"
+        android:name="com.sample.githubissuesdemo.view.fragments.UserDetailsFragment"
         android:label="fragment_user_details"
-        tools:layout="@layout/fragment_user_details" />
+        tools:layout="@layout/fragment_issue_details" />
 </navigation>
